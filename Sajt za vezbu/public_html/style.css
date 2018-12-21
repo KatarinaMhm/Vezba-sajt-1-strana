@@ -1,0 +1,170 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    outline: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* *** Float containers fix: 
+  http://www.csscreator.com/attributes/containedfloat.php *** */
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix {
+    display: inline-block;
+}
+
+/* Hides from IE-mac \*/
+
+* html .clearfix {
+    height: 1%;
+}
+
+.clearfix {
+    display: block;
+}
+
+/* End hide from IE-mac */
+
+/* globalna podesavanja */
+
+
+ul, ol {
+    list-style: none;
+}
+
+.clear {
+    clear: both;
+}
+
+.go-left {
+    float: left;
+}
+
+.go-right {
+    float: right;
+}
+
+.go-overflow {
+    overflow: auto;
+}
+
+.active {
+    color: #158591 !important;
+}
+
+/* kraj globalnih podesavanja */
+
+/* boje:    plava - #158591 
+            narandzasta - #F59E3A 
+            siva - #4B453D */
+
+#wrapper {
+    width: 80%;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+/* header i top meni */
+
+#upHead {
+    background-color: #F59E3A;
+    padding: 2vh 3vw;
+}
+
+#upHead div:first-child {
+    color: #fff;
+    font-size: 2em;
+    padding: 1.5vh 0 0 1.5vh;
+}
+
+#upHead img {
+    padding: 2vh;
+}
+
+#topMenu {
+    padding: 2vh 3vw;
+    background-color: #4B453D;
+}
+
+#topMenu li {
+    width: fit-content;
+    padding: 1em;
+}
+
+#topMenu li:hover {
+    background-color: #F59E3A;
+}
+
+#topMenu li a, #topMenu label {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+#topMenu label {
+    padding: 1em 1em 0 0;
+}
+
+#topMenu input {
+    padding-left: 5px;
+    height: 30px;
+    background-color: #158591;
+    color: #fff;
+}
+
+#search {
+    margin-top: 0.6em;
+}
+
+#polaMenija, #ceoMeni {
+    display: none;
+}
+
+#polaMenija button {
+    background-color: #4B453D;
+}
+
+#polaMenija button:hover .dropdown-content{
+    display: block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+#polaMenija:hover .dropdown-content {
+  display: block;
+}
+
+@media ( max-width: 1040px) {
+    #osnovniMeni {
+        display: none;
+    }
+    #polaMenija {
+        display: block;
+    }
+}
+
+/* header i top meni - kraj */
+
